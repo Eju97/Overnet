@@ -21,7 +21,7 @@
   grid-area: aside;
   border: 2px solid black;
   height: auto;
-  background-image: url(../Img/future.gif); }
+  background-image: url(../img/future.gif); }
 
 #footer {
   grid-area: footer;
