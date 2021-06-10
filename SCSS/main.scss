@@ -1,0 +1,152 @@
+@import "_Grilla.scss";
+
+$ancho:100%;
+
+*{
+    font-family: 'Anton', sans-serif;
+}
+
+h1{
+    color: white;
+    font-size: 60px;
+}
+
+h2{
+    color: lightblue;
+    font-size: 40px;
+}
+
+
+body{
+     background: rgb(37,47,134);
+    background: linear-gradient(90deg, rgba(37,47,134,1) 0%, rgba(103,51,102,1) 54%, rgba(178,55,66,1) 100%);
+     background-repeat: unset;
+ }
+
+ .Acomodador{
+    width: $ancho/1.5;
+    margin: auto;
+    font-size: 150%;
+ }
+
+ .parrafobig{
+         font-size: 24px;
+         text-emphasis: uppercase;
+ }
+
+ .parrafosmall{
+         font-size: 18px;
+         text-emphasis: uppercase;
+ } 
+
+ .textCenter{
+     text-align: center;
+ }
+
+ .textRight{
+     text-align: right;
+ }
+
+ .textLeft{
+     text-align: left;
+ }
+
+ .linkSinSub{
+     text-decoration: none;
+ }
+
+ .Aside--modifier{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     height: 100%;
+     margin: auto;
+ }
+
+ ul li{
+     height: 100px;
+     padding: 20px;
+     font-size: 30px;
+     border: solid white; 		
+     text-decoration: none;
+ }
+
+ footer ol li a{
+     text-decoration: none;
+     color: black;
+
+ }
+
+ footer ol li a:hover{ 
+     transform: scale(2,2);	
+     background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+
+ }
+
+
+ fieldset{
+     color: white;
+     font-size: 20px;
+ }
+
+.Menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.Menu_logo{
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-start;
+     height: auto; 
+}
+
+.Menu_nav{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+    text-decoration: none;
+     font-weight: bold;
+     font-size: 30px;
+     justify-content: flex-end;
+}
+
+ 
+
+.Main{
+     display: flex;
+     flex-direction: column;
+     grid-row-gap: 10px;
+     background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+.Main--div{
+     display: flex;
+     flex-direction: row;
+     border: 1px solid black;
+     color: black;
+}
+
+.Footer{
+    display: flex;
+     flex-direction: row;
+     flex-wrap: nowrap;
+     justify-content: center;
+
+}
+
+.Footer_lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 20px;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 25px;
+}

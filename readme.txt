@@ -1,0 +1,1 @@
+Este archivo .zip contiene el desafío de la clase 16.
