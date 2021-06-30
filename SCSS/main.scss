@@ -11,16 +11,26 @@ h1{
     font-size: 60px;
 }
 
-h2{
-    color: lightblue;
-    font-size: 40px;
+.Bigtext{
+    color: white;
+    font-size: 90px;
 }
 
+.Smalltext{
+    color: whitesmoke;
+    font-size: 35px;
+    text-emphasis: uppercase;
+    font-weight: lighter;
+}
+
+h3{
+    color: lightblue;
+    font-size: 20px;
+}
 
 body{
-     background: rgb(37,47,134);
-    background: linear-gradient(90deg, rgba(37,47,134,1) 0%, rgba(103,51,102,1) 54%, rgba(178,55,66,1) 100%);
-     background-repeat: unset;
+    background-image: url(../img/azul1.jpg);
+    background-repeat: inherit;
  }
 
  .Acomodador{
@@ -30,12 +40,12 @@ body{
  }
 
  .parrafobig{
-         font-size: 24px;
+         font-size: 50px;
          text-emphasis: uppercase;
  }
 
  .parrafosmall{
-         font-size: 18px;
+         font-size: 35px;
          text-emphasis: uppercase;
  } 
 
@@ -51,36 +61,26 @@ body{
      text-align: left;
  }
 
- .linkSinSub{
-     text-decoration: none;
- }
-
  .Aside--modifier{
-     display: flex;
-     flex-direction: column;
      justify-content: space-between;
-     height: 100%;
+     height: auto;
      margin: auto;
  }
 
- ul li{
-     height: 100px;
-     padding: 20px;
-     font-size: 30px;
-     border: solid white; 		
-     text-decoration: none;
- }
+.footerblanco{
+    color: white;
+}
 
  footer ol li a{
      text-decoration: none;
-     color: black;
+     color: white;
 
  }
 
  footer ol li a:hover{ 
-     transform: scale(2,2);	
-     background: rgb(238,174,202);
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+     transform: scale(1,1);	
+     background: black;
+     color: white;
 
  }
 
@@ -90,29 +90,31 @@ body{
      font-size: 20px;
  }
 
-.Menu{
+ .Menu_logo{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    height: 100px;
+    justify-content: center;
+    margin-right: 250px;   
+    margin-left: 250px;
+    justify-content: center;
+    height: auto;
+    background-color: whitesmoke; 
 }
 
-.Menu_logo{
-     display: flex;
-     flex-direction: row;
-     justify-content: flex-start;
-     height: auto; 
-}
+
 
 .Menu_nav{
-     display: flex;
-     flex-direction: row;
-     justify-content: space-between;
     text-decoration: none;
-     font-weight: bold;
-     font-size: 30px;
-     justify-content: flex-end;
+    background-color: whitesmoke;
+    justify-content: center;
+    margin-left: 250px;
+    margin-right: 250px;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.Menu_nav--modifier{
+    text-align: center;
 }
 
  
@@ -120,16 +122,15 @@ body{
 .Main{
      display: flex;
      flex-direction: column;
-     grid-row-gap: 10px;
-     background: rgb(238,174,202);
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+     background-color:  rgb(251,248,177);
 }
 
 .Main--div{
      display: flex;
      flex-direction: row;
-     border: 1px solid black;
      color: black;
+     justify-content: center;
+     font-size: 50px;
 }
 
 .Footer{
@@ -149,4 +150,30 @@ body{
     padding: 20px;
     font-weight: bold;
     font-size: 25px;
+}
+
+.Productos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.MainP-Container{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 25px;
+    text-align: center;
+}
+
+.Separador{
+    padding-top: 35px;
+    padding-bottom: 35px;
 }
