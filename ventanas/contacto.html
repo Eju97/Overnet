@@ -11,83 +11,96 @@
 	<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 </head>
 <body>
-	<div class="Grid-Index">
-	<header class="Menu" id="header">
-			<a class="Menu_logo" href="../index.html" class=linkSinSub>
+	<div class="Grid-Contacto">
+	<header class="Menu" id="headerC">
+			<a class="Menu_logo" href="../index.html">
 				<img src="../img/Logo.png">
 			</a>
 		
-			<nav>
-				<ul class="nav justify-content-end Menu_nav">
-  					<li class="nav-item">
-   					<a class="nav-link active" aria-current="page" href="../ventanas/servicios.html">Servicios</a>
-  					</li>
-  					<li class="nav-item">
-    				<a class="nav-link" href="../ventanas/productos.html">Productos</a>
-					</li>
-					<li class="nav-item">
-					<a class="nav-link" href="../ventanas/Sobre_nosotros.html">Sobre Nosotros</a>
-					</li>
-  					<li class="nav-item">
-    				<a class="nav-link" href="../ventanas/contacto.html" tabindex="-1">Contacto</a>
-  					</li>				
-				</ul>
+			<nav class="nav nav-pills flex-column flex-sm-row Menu_nav">
+				<a class="flex-sm-fill text-sm-center nav-link" href="../index.html">Inicio</a>
+				<a class="flex-sm-fill text-sm-center nav-link" href="../ventanas/servicios.html">Servicios</a>
+				<a class="flex-sm-fill text-sm-center nav-link" href="../ventanas/productos.html">Productos</a>
+				<a class="flex-sm-fill text-sm-center nav-link" href="../ventanas/Sobre_nosotros.html">Sobre Nosotros</a>
+				<a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="../ventanas/contacto.html">Contacto</a>
 			</nav>
 		</header>
-	<main id="main">
-	<fieldset>
-		<legend><strong>Contacto</strong></legend>
-			<form action="#" method="post">
-				<label for="nombre">Nombre:</label>
-				<input type="text" name="nombre">
-				<br>
-				<label for="apellido">Apellido:</label>
-				<input type="text" name="apellido">
+
+		<aside id="asideC">
+			<div class="Aside--modifier">
+					<h2 class="textCenter Bigtext">CONTACTANOS AL INSTANTE</h2>
+					<a href="https://api.whatsapp.com/send/?phone=543416416837&text&app_absent=0" target="_blank"><img src="../img/whatsapp.png"></a>
+					<a href="mailto:overnet@overnetsa.com.ar"><img src="../img/email.png"></a>
+					<a href="https://www.facebook.com/OvernetRosario" target="_blank"><img src="../img/facebook.png"></a>
+					<a href="https://www.instagram.com/overnetrosario/" target="_blank"><img scale  src="../img/instagram.png"></a>				
+			</div>
+		</aside>		
+
+
+		<div id="mainC">		
+		<fieldset class="Formulario">
+		<legend><h1 class="textCenter">ENVIANOS TU CONSULTA</h1></legend>
+			<form class="Formulario" action="#" method="post">
+				<label for="nombre y apellido">Nombre y Apellido</label>
+				<input type="text" name="nombreyapellido">
 				<br>
 				<label for="email">Email</label>
 				<input type="text" name="email">
 				<br>
-				<label for="info">Suscribite a nuestro newsletter para recibir novedades</label>
-				<input type="checkbox" name="info" value="info">
+				<div><label for="info">Suscribite a nuestro newsletter para recibir novedades</label>
+				<input type="checkbox" name="info" value="info"></div>
 				<br>
-				<label for="productos">Elije el producto del cual tengas dudas</label>
+				<label for="productos">Elije una opcion</label>
 				<select name="productos">
 					<option value="1">PC básica</option><br>
-					<option value="2">PC estándar</option>
+					<option value="2">PC estandar</option>
 					<option value="3">PC avanzada</option>
 					<option value="4">PC gamer</option>
 					<option value="5">Otro</option>
 				</select><br>
 				
-				<textarea name="comentario" id="comentario" placeholder="Consultanos tu duda" cols=:"30" rows="10"></textarea>
+				<textarea name="comentario" id="comentario" placeholder="Consultanos tu duda" cols="60" rows="8"></textarea>
 				<br>
-				<input type="reset" value="Cancelar">
-				<input type="submit" value="Enviar">
-				
-		</form></fieldset>
-		</main>
+				<div>
+					<button type="button" class="btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">Enviar</button>
+					<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h3 class="modal-title" id="exampleModalLabel">Su consulta fue enviada con exito.</h3>
+									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+									<h3 class="textCenter">¡Muchas gracias!</h3>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<input type="reset" class="btn-secondary"value="Cancelar">
+				</div>
+			</form>
+			</fieldset>
+		</div>
 
-		<aside id="aside">
-			<div class="Aside--modifier">
-				<h2><u>Nuestras redes</u></h2>
-					<a href="https://api.whatsapp.com/send/?phone=543416416837&text&app_absent=0" target="_blank"><img src="../img/whatsapp.png"></a>
-					<a href="mailto:overnet@overnetsa.com.ar"><img src="../img/email.png"></a>
-					<a href="https://www.facebook.com/" target="_blank"><img src="../img/facebook.png"></a>
-					<a href="https://www.instagram.com/" target="_blank"><img scale  src="../img/instagram.png"></a>
-			<hr>	
-				
-			</div>
-		</aside>
-		<footer class="Footer" id="footer">				
+
+		<footer class="Footer" id="footerC">				
            
            <ol class="Footer_lista">
                <li class="Footer_lista"><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
                <li class="Footer_lista"><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
                <li class="Footer_lista"><a href="mailto:overnet@overnetsa.com.ar">Mail</a></li>
                <li class="Footer_lista"><a href="https://api.whatsapp.com/send/?phone=543416416837&text&app_absent=0" target="_blank">Whatsapp</a></li>
-               <li class="Footer_lista"><a href="">&copy 2021 Overnet S.A.</li></a>
+               <li class="Footer_lista footerblanco">&copy 2021 Overnet S.A.</li>
+			   <li class="Footer_lista footerblanco">Rosario (CP 2000), Argentina</li>
            </ol>        
 		</footer>
 	</div>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
 </body>
 </html>
