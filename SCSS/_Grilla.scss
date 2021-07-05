@@ -1,13 +1,12 @@
 .Grid-Index{
     display: grid;
-    grid-row-gap: 50px;
-    grid-column-gap: 200px;						
+    grid-row-gap: 100px;					
     grid-template-areas:'top top'
                         'aside aside'
                         'main main'								
                         'footer footer';
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr auto auto 1fr;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
 
 }
 
@@ -33,7 +32,7 @@
     margin-left: 250px;
     margin-right: 250px;
     display: flex;
-    flex-direction: colum;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -47,15 +46,13 @@
 .Grid-Index{
     height: auto;
     width: auto;
-    margin: 0%;
     display: grid;
     row-gap: 100px;
-    grid-gap: 1em;
-    grid-template-areas: 	'top top' 
-                            'aside aside'
-                            'main main'                           
-                            'footer footer';
-    grid-template-columns: auto auto;
+    grid-template-areas:'top' 
+                        'aside'
+                        'main'                           
+                        'footer';
+    grid-template-columns: auto;
     grid-template-rows: (auto auto auto auto);
     background: no-repeat;
 }
